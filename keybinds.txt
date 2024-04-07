@@ -1,0 +1,153 @@
+MAPA DE ATALHOS!
+
+PREFIXO C-x (C = Ctrl | C-g = cancela os comandos)
+        |
+        |
+        +----> C-c    Sair do Emacs
+        |
+-------------------------------------------------------------------
+ARQUIVO : Onde e com que nome os trabalhos são salvos
+-------------------------------------------------------------------
+        |
+        +----> C-f    Abrir/criar arquivos
+        |
+        +----> C-s    Salvar
+        |
+        +----> C-w    Salvar como
+        |
+-------------------------------------------------------------------
+BUFFERS : O conteúdo que está sendo trabalhado/exibido
+-------------------------------------------------------------------
+        |
+        +----> C-b    Menu de buffers (abre em outra janela)
+        |
+        +----> b      Trocar de buffer / Novo buffer
+        |
+        +----> ←     Circular para o buffer anterior
+        |
+        +----> →     Circular para o próximo buffer
+        |
+        +----> h      Selecionar conteúdo do buffer
+        |
+        +----> i      Inserir conteúdo de arquivo no buffer
+        |
+        +----> C-v    Substituir conteúdo do buffer
+        |             pelo conteúdo de um arquivo
+        |
+        +----> k      "Matar" buffer
+        |
+-------------------------------------------------------------------
+JANELAS : Divisões do frame onde o conteúdo será trabalhado/exibido
+-------------------------------------------------------------------
+        |
+        +----> o      Circular pelas janelas
+        |
+        +----> 2      Criar janela abaixo
+        |
+        +----> 3      Criar janela ao lado
+        |
+        +----> 0      Fechar a janela em foco
+        |
+        +----> 1      Fechar todas as outras janelas
+        |
+-------------------------------------------------------------------
+ FRAMES : Instâncias da mesma sessão do Emacs
+-------------------------------------------------------------------
+        |
+        +----> 5 o    Circular pelos frames
+        |
+        +----> 5 2    Criar novo frame
+        |
+        +----> 5 0    Fechar frame em foco
+        |
+        +----> 5 1    Fechar todos os outros frames
+
+
+-------------------------------------------------------------------
+EDIÇÃO DE TEXTOS
+-------------------------------------------------------------------
+
+    NAVEGAÇÃO
+
+    * Caractere à esquerda: tecla ←   (C-b)
+    * Caractere à direita : tecla →   (C-f)
+    * Linha acima         : tecla ↑   (C-p)
+    * Linha abaixo        : tecla ↓   (C-n)
+    * Palavra anterior    : C-←       (M-b)
+    * Próxima palavra     : C-→       (M-f)
+    * Início da linha     : Home      (C-a)
+    * Fim da linha        : End       (C-e)
+    * Início do buffer    : C-Home    (M-<)
+    * Fim do buffer       : C-End     (M->)
+
+    DESFAZER/REFAZER
+
+    * Desfazer ações: C-/ (ou C-x u)
+    * Refazer ações : logo após desfazer, teclar: C-g C-/
+
+    SELEÇÃO
+
+    * Movimentar o cursor com a tecla [SHIFT] pressionada
+    * Iniciar/terminar seleção: C-SPC
+    * Selecionar tudo: C-x h (teclar 2x 'C-SPC' desativa)
+
+    ÁREA DE TRANSFERÊNCIA
+
+    * Copiar  : M-w
+    * Recortar: C-w (kill)
+    * Colar   : C-y (yank)
+    * Pop-yank: M-y
+
+        - Permite circular conteúdo da área de transferência
+        - Após colar com C-y, inicia a circulação com  M-y
+
+    * Recortar do cursor ao fim da linha: C-k
+    * Recortar do início ao fim da linha: C-a C-k
+
+    VERIFICAÇÃO ORTOGRÁFICA
+
+    * Verificar palavra      : M-$ (sobre a palavra)
+    * Verificar buffer       : M-x ispell
+    * Ajuda da verificação   : Com o ispell iniciado, teclar ?
+    * Suspender a verificação: Com o ispell iniciado, teclar M-x
+    * Matar a verificação    : Com o ispell suspenso, teclar M-x ispell-kill-ispell
+    * Trocar de dicionário   : M-x ispell-change-dictionary [ENTER] ([TAB] para uma lista)
+
+-------------------------------------------------------------------
+INTERFACE
+-------------------------------------------------------------------
+
+PREFIXO M-x (M = Alt | C-g = cancela os comandos | TAB = autocompleta)
+        |
+        +---- display-line-numbers-mode
+        |     (numeração de linhas)
+	|
+	+---- hl-line-mode
+	|     (destaque da linha atual)
+	|
+	+---- delete-selection-mode
+	|     (substituir seleção ao digitar)
+	|
+	+---- cua-mode
+	|     (copiar e colar com C-c e C-v)
+	|
+	+---- set-frame-font [ENTER] FONTE-TAMANHO
+	|     (mudar fonte)
+	|
+	+---- set-foreground-color [ENTER] COR (hexa ou nome)
+	|     (mudar cor do texto)
+	|
+	+---- set-background-color [ENTER] COR (hexa ou nome)
+	|     (mudar cor do fundo)
+	|
+	+---- load-theme [ENTER] TEMA ([TAB] para os nomes)
+	|     (carregar um tema)
+	|
+	+---- menu-bar-mode
+	|     (ocultar/exibir barra de menu)
+	|
+	+---- tool-bar-mode
+	|     (ocultar/exibir barra de ferramentas)
+	|
+	+---- scroll-bar-mode
+	      (ocultar/exibir barra de rolagem)
